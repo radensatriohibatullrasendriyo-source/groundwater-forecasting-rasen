@@ -1,0 +1,5 @@
+periode,metode,MAE_m,RMSE_m
+CV pengembangan,Kandidat ML terkunci,0.02481564447600407,0.03772331835344366
+Holdout,Kandidat ML terkunci,0.037383886743023655,0.04925412428908843
+CV pengembangan,Persistence,0.03335195530726257,
+Holdout,Persistence,0.03900560224089618,0.06377261778154858

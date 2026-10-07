@@ -1,0 +1,126 @@
+{
+  "experiment_id": "tuning_MLP_3",
+  "model_family": "MLP",
+  "feature_group": "head_weather",
+  "feature_columns": [
+    "head_t",
+    "head_lag_1w",
+    "head_lag_2w",
+    "head_lag_4w",
+    "head_mean_4w",
+    "head_change_1w",
+    "rainfall_mm_t",
+    "temperature_mean_c_t",
+    "temperature_min_c_t",
+    "temperature_max_c_t",
+    "sea_level_pressure_hpa_t",
+    "relative_humidity_pct_t",
+    "wind_speed_ms_t",
+    "global_radiation_wm2_t",
+    "potential_evaporation_mm_t",
+    "rainfall_sum_4w",
+    "evaporation_sum_4w",
+    "rainfall_sum_8w",
+    "evaporation_sum_8w"
+  ],
+  "holdout_evaluated": true,
+  "holdout_used_for_tuning": false,
+  "forecast_policy": "rolling one-week-ahead with observed history; not multi-step recursion",
+  "horizon_weeks": 1,
+  "holdout_target_start": "2017-01-01",
+  "evaluated_target_start": "2017-01-01",
+  "evaluated_target_end": "2020-11-22",
+  "n_holdout": 204,
+  "n_calendar_weeks": 205,
+  "n_seasonal_common_dates": 165,
+  "metrics_main": [
+    {
+      "metode": "Kandidat ML terkunci",
+      "n": 204,
+      "MAE_m": 0.037383886743023655,
+      "MAE_cm": 3.7383886743023655,
+      "RMSE_m": 0.04925412428908843,
+      "R2": 0.9430869921621797,
+      "bias_pred_minus_actual_m": 0.01911932057203304,
+      "P90_absolute_error_m": 0.08535450619186487,
+      "max_absolute_error_m": 0.153997526857097,
+      "skill_MAE_vs_persistence_pct": 4.157647631888639
+    },
+    {
+      "metode": "Persistence",
+      "n": 204,
+      "MAE_m": 0.03900560224089618,
+      "MAE_cm": 3.900560224089618,
+      "RMSE_m": 0.06377261778154858,
+      "R2": 0.9045897961431524,
+      "bias_pred_minus_actual_m": 0.00015406162464985418,
+      "P90_absolute_error_m": 0.08342857142857203,
+      "max_absolute_error_m": 0.48714285714285666,
+      "skill_MAE_vs_persistence_pct": 0.0
+    }
+  ],
+  "metrics_seasonal_common_dates": [
+    {
+      "metode": "Kandidat ML terkunci",
+      "n": 165,
+      "MAE_m": 0.03866222340447037,
+      "MAE_cm": 3.866222340447037,
+      "RMSE_m": 0.05048740204735219,
+      "R2": 0.9470968100290433,
+      "bias_pred_minus_actual_m": 0.021793492224878665,
+      "P90_absolute_error_m": 0.08695060944914842,
+      "max_absolute_error_m": 0.153997526857097
+    },
+    {
+      "metode": "Persistence",
+      "n": 165,
+      "MAE_m": 0.040770562770562575,
+      "MAE_cm": 4.077056277056258,
+      "RMSE_m": 0.06705290096274806,
+      "R2": 0.906685108270692,
+      "bias_pred_minus_actual_m": 0.00023376623376623185,
+      "P90_absolute_error_m": 0.08885714285714348,
+      "max_absolute_error_m": 0.48714285714285666
+    },
+    {
+      "metode": "Seasonal naive 52w",
+      "n": 165,
+      "MAE_m": 0.15774891774891778,
+      "MAE_cm": 15.774891774891778,
+      "RMSE_m": 0.22851682248158686,
+      "R2": -0.08380753492509818,
+      "bias_pred_minus_actual_m": 0.0310476190476191,
+      "P90_absolute_error_m": 0.44542857142857095,
+      "max_absolute_error_m": 0.6400000000000023
+    }
+  ],
+  "cv_recommendation_unchanged": "kandidat_ml",
+  "conclusion": [
+    "Kandidat yang diuji adalah MLP (tuning_MLP_3) dengan 19 fitur.",
+    "Evaluasi mencakup 204 sampel, dari target 2017-01-01 sampai 2020-11-22.",
+    "MAE kandidat ML = 0.0374 m (3.74 cm), RMSE = 0.0493 m, R² = 0.9431.",
+    "MAE persistence = 0.0390 m (3.90 cm).",
+    "MAE kandidat ML lebih rendah daripada persistence sebesar 0.16 cm.",
+    "Pengurangan MAE relatif terhadap persistence: 4.16% (bukan akurasi).",
+    "Tahun dengan MAE ML terbesar pada holdout: 2019, sebesar 4.71 cm dari 52 sampel.",
+    "Perbandingan tiga metode dengan baseline musiman memakai 165 tanggal bersama.",
+    "Rekomendasi yang sudah ditetapkan dari CV: kandidat_ml; tidak diubah melalui tuning holdout.",
+    "Hasil ini berlaku untuk prediksi satu minggu ke depan pada lokasi dan sampel yang diuji, dengan riwayat observasi yang tersedia.",
+    "Belum ada ambang toleransi operasional yang disepakati, jadi skor ini tidak menjadi sertifikasi layak pakai di lapangan."
+  ],
+  "identity": {
+    "model_sha256": "00c0c2ec7a9856af4627ae02e2b93fe5667e62d07802a43b7793245aa614d322",
+    "holdout_sha256": "0d869f6eea357a3095e79e296f33a84aedecc612a9c7dc14b0c9316cd356aa9b",
+    "schema_sha256": "921e76c43a03a312aee8041b80cfb33bc1c0b9c6bddeb409a0d86c3e159c097d",
+    "experiment_id": "tuning_MLP_3"
+  },
+  "evaluation_sklearn_version": "1.6.1",
+  "limitations": [
+    "one well",
+    "historical weather availability assumption",
+    "no operational tolerance threshold",
+    "complete-case evaluation",
+    "not a slope-safety model",
+    "no statistical significance claim"
+  ]
+}

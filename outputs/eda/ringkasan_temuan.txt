@@ -1,0 +1,5 @@
+Data pengembangan mencakup 887 minggu kalender; 827 minggu memenuhi aturan kelayakan.
+Head pada minggu layak berkisar 10.604 sampai 11.374 m terhadap acuan dataset.
+Median head menurut bulan akhir minggu tertinggi pada Jan (11.287 m) dan terendah pada Jul (11.161 m).
+Korelasi head minggu t dengan t+1 adalah 0.900, dihitung dari 823 pasangan tersedia.
+Temuan ini menjadi dasar kandidat fitur, bukan kesimpulan model terbaik.

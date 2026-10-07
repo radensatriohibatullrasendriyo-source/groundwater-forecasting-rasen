@@ -1,0 +1,14 @@
+{
+  "identity": {
+    "model_sha256": "00c0c2ec7a9856af4627ae02e2b93fe5667e62d07802a43b7793245aa614d322",
+    "holdout_sha256": "0d869f6eea357a3095e79e296f33a84aedecc612a9c7dc14b0c9316cd356aa9b",
+    "schema_sha256": "921e76c43a03a312aee8041b80cfb33bc1c0b9c6bddeb409a0d86c3e159c097d",
+    "experiment_id": "tuning_MLP_3"
+  },
+  "first_evaluation_utc": "2026-10-07T07:13:16.900419+00:00",
+  "status": "completed",
+  "holdout_evaluated": true,
+  "selection_source": "development CV from notebook 04",
+  "last_reproduced_utc": "2026-10-07T07:13:20.162909+00:00",
+  "n_holdout": 204
+}

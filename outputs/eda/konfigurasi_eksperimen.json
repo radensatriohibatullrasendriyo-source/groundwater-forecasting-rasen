@@ -1,0 +1,10 @@
+{
+  "sumber": "data/processed/netherlands_weekly.csv",
+  "batas_holdout_tanggal_target": "2017-01-01",
+  "frekuensi": "W-SUN",
+  "horizon_minggu": 1,
+  "target": "rata-rata hydraulic head pada minggu t+1",
+  "batas_informasi": "akhir minggu t",
+  "metrik_utama_rencana": "MAE",
+  "catatan": "Pembagian model mengikuti tanggal target; preprocessing di-fit pada latihan tiap fold."
+}

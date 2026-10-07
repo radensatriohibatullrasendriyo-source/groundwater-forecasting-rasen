@@ -1,0 +1,4 @@
+# Pasang pada Python/kernel yang dipakai notebook 04 dan 05.
+# scikit-learn, numpy, pandas, dan joblib mengikuti environment model yang sudah ada.
+streamlit>=1.55,<2
+plotly>=5,<7

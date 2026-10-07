@@ -1,0 +1,3 @@
+data/processed/** -text
+models/** -text
+outputs/** -text

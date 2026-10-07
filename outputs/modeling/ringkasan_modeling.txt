@@ -1,0 +1,7 @@
+Eksperimen awal: 24; konfigurasi tuning: 14.
+Kandidat ML: tuning_MLP_3, dengan 19 fitur.
+MAE OOF kandidat ML: 0.0248 m; persistence: 0.0334 m.
+Rekomendasi validasi sementara pada cakupan penuh: kandidat_ml.
+Total warning tercatat: 1. Eksperimen dengan warning konvergensi tidak dipilih.
+Holdout belum dievaluasi. Hasil validasi bukan skor pengujian akhir.
+Berikutnya: evaluasi kandidat terkunci dan baseline pada holdout, lalu dashboard serta dokumentasi.

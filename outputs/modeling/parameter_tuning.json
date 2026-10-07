@@ -1,0 +1,66 @@
+{
+  "tuning_SVR_1": {
+    "regressor__model__C": 0.3,
+    "regressor__model__epsilon": 0.05
+  },
+  "tuning_SVR_2": {
+    "regressor__model__C": 0.3,
+    "regressor__model__epsilon": 0.15
+  },
+  "tuning_SVR_3": {
+    "regressor__model__C": 3.0,
+    "regressor__model__epsilon": 0.05
+  },
+  "tuning_SVR_4": {
+    "regressor__model__C": 3.0,
+    "regressor__model__epsilon": 0.15
+  },
+  "tuning_SVR_5": {
+    "regressor__model__C": 10.0,
+    "regressor__model__epsilon": 0.05
+  },
+  "tuning_SVR_6": {
+    "regressor__model__C": 10.0,
+    "regressor__model__epsilon": 0.15
+  },
+  "tuning_GradientBoosting_1": {
+    "max_depth": 1,
+    "n_estimators": 80
+  },
+  "tuning_GradientBoosting_2": {
+    "max_depth": 1,
+    "n_estimators": 180
+  },
+  "tuning_GradientBoosting_3": {
+    "max_depth": 2,
+    "n_estimators": 80
+  },
+  "tuning_GradientBoosting_4": {
+    "max_depth": 2,
+    "n_estimators": 180
+  },
+  "tuning_MLP_1": {
+    "regressor__model__alpha": 1.0,
+    "regressor__model__hidden_layer_sizes": [
+      8
+    ]
+  },
+  "tuning_MLP_2": {
+    "regressor__model__alpha": 1.0,
+    "regressor__model__hidden_layer_sizes": [
+      16
+    ]
+  },
+  "tuning_MLP_3": {
+    "regressor__model__alpha": 10.0,
+    "regressor__model__hidden_layer_sizes": [
+      8
+    ]
+  },
+  "tuning_MLP_4": {
+    "regressor__model__alpha": 10.0,
+    "regressor__model__hidden_layer_sizes": [
+      16
+    ]
+  }
+}
