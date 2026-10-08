@@ -47,4 +47,6 @@ Satu sumur, data historis, cuaca arsip, dan evaluasi pada sampel lengkap. Predik
 
 Pertahankan atribusi sumber. Periksa ketentuan lisensi dataset dan repositori sebelum redistribusi. Proyek memakai rancangan prediksi sendiri, bukan mereplikasi aturan challenge asal.
 
-Status: aplikasi lokal. Publikasi GitHub dan hosting belum dilakukan oleh paket ini.
+## Project Presentation
+
+[View the project presentation (PDF)](Groundwater_Forecasting_Raden Satrio Hibatull Rasendriyo_Portfolio.pdf).
