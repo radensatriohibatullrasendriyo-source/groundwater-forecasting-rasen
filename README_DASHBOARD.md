@@ -1,6 +1,11 @@
 # Groundwater Lab — Rasen
 
-Prototipe dashboard untuk eksplorasi data air tanah dan prediksi rata-rata hydraulic head satu minggu ke depan pada studi kasus Drenthe, Belanda. Dibangun sebagai kelanjutan proyek akhir Machine Learning & AI DQLab.
+Prototipe dashboard untuk eksplorasi data air tanah dan prediksi rata-rata hydraulic head satu minggu ke depan pada studi kasus Drenthe, Belanda. Proyek ini dibuat sebagai proyek akhir Machine Learning & AI for Beginner Bootcamp, Batch 25.
+
+**Author:** Raden Satrio Hibatull Rasendriyo  
+**Email:** [radensatriohibatullrasendriyo@gmail.com](mailto:radensatriohibatullrasendriyo@gmail.com)  
+**LinkedIn:** [linkedin.com/in/raden-satrio](https://www.linkedin.com/in/raden-satrio)  
+**Live dashboard:** [groundwaterforecasting-rasen.streamlit.app](https://groundwaterforecasting-rasen.streamlit.app/)
 
 ## Pertanyaan proyek
 
@@ -47,6 +52,4 @@ Satu sumur, data historis, cuaca arsip, dan evaluasi pada sampel lengkap. Predik
 
 Pertahankan atribusi sumber. Periksa ketentuan lisensi dataset dan repositori sebelum redistribusi. Proyek memakai rancangan prediksi sendiri, bukan mereplikasi aturan challenge asal.
 
-## Project Presentation
-
-[View the project presentation (PDF)](Groundwater_Forecasting_Raden Satrio Hibatull Rasendriyo_Portfolio.pdf).
+Status: aplikasi lokal. Publikasi GitHub dan hosting belum dilakukan oleh paket ini.
