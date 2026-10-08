@@ -1,4 +1,3 @@
-"""Dashboard proyek Rasen. Jalankan: python -m streamlit run app.py"""
 from pathlib import Path
 import html
 import json
@@ -52,7 +51,7 @@ def download_csv(frame,name,label="Unduh tabel CSV"):
     st.download_button(label,frame.to_csv(index=False).encode("utf-8"),name,"text/csv")
 
 st.sidebar.markdown("## 💧 Groundwater Lab")
-st.sidebar.caption("Rasen · ML & AI Capstone")
+st.sidebar.caption("Machine Learning & AI for Beginner · Batch 25")
 page=st.sidebar.radio("Navigasi",["Ringkasan","Data historis","Evaluasi model","Coba prediksi","Tentang proyek"])
 st.sidebar.divider()
 st.sidebar.caption("Studi kasus Drenthe, Belanda\n\nPrediksi head satu minggu ke depan")
@@ -201,7 +200,9 @@ elif page=="Coba prediksi":
 
 else:
     st.title("Tentang proyek")
-    st.write("Proyek akhir Machine Learning & AI DQLab oleh Rasen, dengan minat pada geofisika komputasi dan pengolahan data monitoring.")
+    st.write("This project was developed as the final project for the Machine Learning & AI for Beginner Bootcamp, Batch 25. It was created by Raden Satrio Hibatull Rasendriyo, a physics student interested in computational geophysics and data analysis.")
+    st.markdown("**Contact**  \nEmail: [radensatriohibatullrasendriyo@gmail.com](mailto:radensatriohibatullrasendriyo@gmail.com)  \nLinkedIn: [linkedin.com/in/raden-satrio](https://www.linkedin.com/in/raden-satrio)")
+    st.markdown("**Project links**  \n[GitHub repository](https://github.com/radensatriohibatullrasendriyo-source/groundwater-forecasting-rasen) · [Live Streamlit dashboard](https://groundwaterforecasting-rasen.streamlit.app/)")
     st.subheader("Dari data menjadi hasil yang bisa diperiksa")
     st.dataframe(pd.DataFrame([
         ["01","Problem identification & data understanding","Memeriksa sumber, tanggal hilang, dan agregasi mingguan"],
